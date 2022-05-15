@@ -9,8 +9,10 @@ type Props = {}
 const Home = (props: Props) => {
   return (
     <div className={s.home}>
-      <ThisDay />
-      <ThisDayInfo />
+      <div className={s.wrapper}>
+        <ThisDay />
+        <ThisDayInfo />
+      </div>
     </div>
   )
 }
