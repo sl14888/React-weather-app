@@ -26,4 +26,19 @@
         font-weight: 500;
         color: $primary-color;
     }
+
+    .this_day_name {
+        font-size: 40px;
+        color: $lite-color;
+    }
+
+}
+
+.bottom_block {
+
+    .this_time,
+    .this_city {
+        color: $base-clor;
+        font-size: 20px;
+    }
 }
