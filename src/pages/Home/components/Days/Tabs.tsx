@@ -20,7 +20,7 @@ const Tabs = (props: Props) => {
         },
     ];
     return (
-        <div className={s.tab}>
+        <div className={s.tabs}>
             <div className={s.tabs_wrapper}>
                 {tabs.map((tab) => (
                     <div className={s.tab} key={tab.value}>
@@ -28,7 +28,7 @@ const Tabs = (props: Props) => {
                     </div>
                 ))}
             </div>
-            <div className={s.tab_cancel}>Отменить</div>
+            <div className={s.cancel}>Отменить</div>
         </div>
     )
 }
