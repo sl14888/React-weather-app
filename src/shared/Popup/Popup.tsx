@@ -1,4 +1,5 @@
 import React from 'react'
+import GlobalSvgSelector from '../../assets/icons/global/GlobalSvgSelector'
 import { Item } from '../../pages/Home/components/ThisDayInfo/ThisDayInfo'
 import ThisDayItem from '../../pages/Home/components/ThisDayInfo/ThisDayItem'
 import s from './Popup.module.scss'
@@ -29,13 +30,19 @@ const Popup = ({ }: Props) => {
         },
     ];
     return (
-        <div className={s.popup}>
-            <div className={s.this_day_info_items}>
-                {items.map((item: Item) => (
-                    <ThisDayItem key={item.icon_id} item={item} />
-                ))}
+        <>
+            <div className={s.blur}></div>
+            <div className={s.popup}>
+                <div className={s.this_day_info_items}>
+                    {items.map((item: Item) => (
+                        <ThisDayItem key={item.icon_id} item={item} />
+                    ))}
+                </div>
+                <div className={s.close}>
+                    <GlobalSvgSelector id='close' />
+                </div>
             </div>
-        </div>
+        </>
     )
 }
 
