@@ -7,7 +7,7 @@
     z-index: 9999;
     display: flex;
     align-items: center;
-    justify-self: center;
+    justify-content: space-between;
     padding: 40px;
     max-width: 750px;
     width: 100%;
@@ -38,5 +38,37 @@
         svg {
             transform: rotate(360deg);
         }
+    }
+}
+
+.day {
+    &_temp {
+        font-weight: 500;
+        font-size: 60px;
+        color: $primary-color;
+        margin-bottom: 12px;
+    }
+
+    &_name {
+        font-size: 25px;
+        line-height: 30px;
+        color: #000;
+        margin-bottom: 12px;
+    }
+
+    &_time,
+    &_city {
+        font-size: 15px;
+        color: $base-color;
+    }
+
+}
+
+.img {
+    margin-bottom: 12px;
+
+    svg {
+        width: 53px;
+        height: 53px;
     }
 }
