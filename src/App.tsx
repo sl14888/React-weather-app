@@ -6,6 +6,7 @@ import MonthStatistics from './pages/MonthStatistics/MonthStatistics';
 import './styles/index.scss'
 import Popup from './shared/Popup/Popup';
 
+
 function App() {
   return (
     <div className="global-container">
